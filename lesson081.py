@@ -91,5 +91,7 @@ help(my_func)
 print()
 print('-'*80)
 
+print(my_func.__doc__)
+print('-'*80)
 
 
