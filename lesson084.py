@@ -31,7 +31,14 @@ print(sorted(l, key=dist_sq))
 print(sorted(l, key=lambda x: (x.real)**2 + (x.imag)**2))
 print('-'*80)
 
+l = ['Cleese', 'Idle', 'Palin', 'Chapman', 'Gilliam', 'Jones']
+print(sorted(l))
+print(sorted(l, key=lambda s: s[-1]))
+print()
 
+l = ['Idle', 'Cleese', 'Palin', 'Chapman', 'Gilliam', 'Jones']
+print(sorted(l))
+print(sorted(l, key=lambda s: s[-1]))
 
 
 
