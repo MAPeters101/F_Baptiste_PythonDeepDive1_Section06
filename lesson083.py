@@ -48,6 +48,12 @@ f = lambda x, *args, y, **kwargs: (x, *args, y, *kwargs)
 #print(f())
 print(f(1, 'a', 'b', y=100, a=10, b=2))
 print(f(1, y=100))
-print()
+print('-'*80)
 
+def apply_func(x, fn):
+    return fn(x)
+print(apply_func(3, sq))
+print(apply_func(5, sq))
+print(apply_func(5, lambda x: x**2))
+print(apply_func(5, lambda x: x**3))
 
