@@ -56,4 +56,27 @@ print(apply_func(3, sq))
 print(apply_func(5, sq))
 print(apply_func(5, lambda x: x**2))
 print(apply_func(5, lambda x: x**3))
+print('-'*80)
+
+def apply_func(fn, *args, **kwargs):
+    return fn(*args, **kwargs)
+print(apply_func(sq, 3))
+print()
+
+print(apply_func(lambda x: x**2, 3))
+print()
+
+print(apply_func(lambda x, y: x+y, 1,2))
+print()
+
+print(apply_func(lambda x, *, y: x+y, 1, y=20))
+print()
+
+print(apply_func(lambda *args: sum(args), 1,2,3,4,5))
+print()
+
+print(apply_func(sum, (1,2,3,4,5)))
+print()
+
+print(sum((1,2,3,4,5)))
 
