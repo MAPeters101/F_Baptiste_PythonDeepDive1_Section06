@@ -117,3 +117,19 @@ print(my_func('a'))
 print(my_func.__annotations__)
 print('-'*80)
 
+def my_func(a: str,
+            b: 'int > 0' = 1,
+            *args: 'some extra positional args',
+            k1: 'keyword-only arg 1',
+            k2: 'keyword-only arg 2' = 100,
+            **kwargs: 'some extra keyword-only args') -> 'something':
+    print(a, b, args, k1, k2, kwargs)
+help(my_func)
+print(my_func.__annotations__)
+print()
+my_func(1, 2, 3, 4, 5, k1=10, k3=300, k4=400)
+
+
+
+
+
