@@ -32,3 +32,22 @@ print(g(1, 2))
 print(g(1))
 print('-'*80)
 
+f = lambda x, *args, y, **kwargs: (x, args, y, kwargs)
+#print(f())
+print(f(1, 'a', 'b', y=100, a=10, b=2))
+print(f(1, y=100))
+print()
+
+f = lambda x, *args, y, **kwargs: (x, *args, y, {**kwargs})
+#print(f())
+print(f(1, 'a', 'b', y=100, a=10, b=2))
+print(f(1, y=100))
+print()
+
+f = lambda x, *args, y, **kwargs: (x, *args, y, *kwargs)
+#print(f())
+print(f(1, 'a', 'b', y=100, a=10, b=2))
+print(f(1, y=100))
+print()
+
+
