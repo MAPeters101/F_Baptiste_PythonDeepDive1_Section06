@@ -22,5 +22,12 @@ print(result == s.upper())
 print(result is s.upper())
 print('-'*80)
 
+from decimal import Decimal
+print(callable(Decimal))
+a = Decimal('10.5')
+print(a)
+print(type(a))
+print(callable(a))
+print('-'*80)
 
 
