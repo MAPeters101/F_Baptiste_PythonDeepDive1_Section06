@@ -30,4 +30,13 @@ print(type(a))
 print(callable(a))
 print('-'*80)
 
+class MyClass:
+    def __init__(self, x=0):
+        print('initializing...')
+        self.counter = x
+print(callable(MyClass))
+a = MyClass(100)
+print(a.counter)
+print(callable(a))
+print('-'*80)
 
