@@ -36,5 +36,16 @@ print(my_func.__defaults__)
 print(my_func.__kwdefaults__)
 print('-'*80)
 
+print(my_func.__code__)
+print(dir(my_func.__code__))
+pprint(dir(my_func.__code__))
+print()
+print(my_func.__code__.co_name)
+print(my_func.__code__.co_varnames)
+print(my_func.__code__.co_argcount)
+print('-'*80)
+
+
+
 
 
