@@ -1,3 +1,5 @@
+from pprint import pprint
+
 def my_func(a: "mandatory positional",
             b: "optional positional" =1,
             c=2,
@@ -11,4 +13,13 @@ def my_func(a: "mandatory positional",
     i = 10
     j = 20
 
+print(my_func.__doc__)
+print(my_func.__annotations__)
+pprint(my_func.__annotations__)
+#print(my_func.short_description)
+my_func.short_description = "This is a function that does nothing much"
+print(my_func.short_description)
+print(dir(my_func))
+pprint(dir(my_func))
+print('-'*80)
 
