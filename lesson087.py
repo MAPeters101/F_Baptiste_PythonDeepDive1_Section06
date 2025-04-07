@@ -23,3 +23,13 @@ print(dir(my_func))
 pprint(dir(my_func))
 print('-'*80)
 
+print(my_func.__name__)
+print(hex(id(my_func)))
+def func_call(f):
+    print(hex(id(f)))
+    print(f.__name__)
+
+func_call(my_func)
+
+
+
