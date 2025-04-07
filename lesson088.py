@@ -40,3 +40,25 @@ print(a.counter)
 print(callable(a))
 print('-'*80)
 
+class MyClass:
+    def __init__(self, x=0):
+        print('initializing...')
+        self.counter = x
+    def __call__(self, x=1):
+        print('updating counter...')
+        self.counter += x
+
+print(callable(MyClass))
+b = MyClass()
+print(b.counter)
+print()
+MyClass.__call__(b, 10)
+print(b.counter)
+print(callable(b))
+b()
+print(b.counter)
+
+b(100)
+print(b.counter)
+print(type(MyClass))
+print(type(Decimal))
