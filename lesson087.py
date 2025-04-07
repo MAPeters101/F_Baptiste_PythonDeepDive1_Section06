@@ -93,3 +93,15 @@ f = my_func
 print(inspect.getsource(f))
 print('-'*80)
 
+print(inspect.getmodule(my_func))
+pprint(inspect.getmodule(my_func))
+print()
+print(inspect.getmodule(print))
+print()
+
+import math
+print(inspect.getmodule(math.sin))
+print('-'*80)
+
+
+
