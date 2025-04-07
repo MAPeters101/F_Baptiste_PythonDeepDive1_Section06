@@ -45,6 +45,14 @@ print(my_func.__code__.co_varnames)
 print(my_func.__code__.co_argcount)
 print('-'*80)
 
+import inspect
+from inspect import isfunction, ismethod, isroutine
+a = 10
+print(isfunction(a))
+print(isfunction(my_func))
+print(ismethod(my_func))
+print(isroutine(my_func))
+print('-'*80)
 
 
 
