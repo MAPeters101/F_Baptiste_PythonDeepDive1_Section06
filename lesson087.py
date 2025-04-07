@@ -127,6 +127,40 @@ print(inspect.getcomments(my_func))
 print(my_func.__doc__)
 print('-'*80)
 
+pprint(inspect.signature(my_func))
+pprint(dir(inspect.signature(my_func)))
+print()
+pprint(my_func.__annotations__)
+print()
+print(inspect.signature(my_func).return_annotation)
+print()
+
+sig = inspect.signature(my_func)
+pprint(sig.parameters)
+print()
+
+for k,v in sig.parameters.items():
+    print(k,v, type(v))
+print()
+
+for k, param in sig.parameters.items():
+    #print(dir(v))
+    print('Key:', k)
+    print('Name:', param.name)
+    print('Default:', param.default)
+    print('Annotation:', param.annotation)
+    print('Kind:', param.kind)
+    print('-'*20)
+print()
+
+for param in sig.parameters.values():
+    #print(dir(v))
+    print('Name:', param.name)
+    print('Default:', param.default)
+    print('Annotation:', param.annotation)
+    print('Kind:', param.kind)
+    print('-'*20)
+print()
 
 
 
