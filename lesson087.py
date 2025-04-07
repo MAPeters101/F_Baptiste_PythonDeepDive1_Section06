@@ -161,6 +161,13 @@ for param in sig.parameters.values():
     print('Kind:', param.kind)
     print('-'*20)
 print()
+print('-'*80)
 
+help(divmod)
+print(divmod(2, 3))
+print(divmod(4, 3))
+print()
 
-
+#print(divmod(x=4, y=3))
+for param in inspect.signature(divmod).parameters.values():
+    print(param.kind)
