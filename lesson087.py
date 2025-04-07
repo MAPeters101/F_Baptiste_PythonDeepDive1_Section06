@@ -30,6 +30,11 @@ def func_call(f):
     print(f.__name__)
 
 func_call(my_func)
+print('-'*80)
+
+print(my_func.__defaults__)
+print(my_func.__kwdefaults__)
+print('-'*80)
 
 
 
