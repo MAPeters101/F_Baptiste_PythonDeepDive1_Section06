@@ -54,6 +54,18 @@ print(ismethod(my_func))
 print(isroutine(my_func))
 print('-'*80)
 
+class MyClass:
+    def f(self):
+        pass
 
+print(isfunction(MyClass.f))
+my_obj = MyClass()
+print(isfunction(MyClass.f))
+print(isfunction(my_obj.f))
+print(ismethod(my_obj.f))
+print()
+print(isroutine(MyClass.f))
+print(isroutine(my_obj.f))
+print('-'*80)
 
 
