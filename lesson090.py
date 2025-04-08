@@ -83,6 +83,43 @@ print('.....')
 print('-'*80)
 
 print(list(zip(range(10_000), 'python')))
+l = range(10)
+print(l)
+print(list(l))
+print(list(l))
+print(list(map(fact, l)))
+results = [fact(n) for n in range(10)]
+print(results)
+print()
 
+results = (fact(n) for n in range(10))
+print(results)
+print()
+for x in results:
+    print(x)
+print('...')
+for x in results:
+    print(x)
+print('...')
+
+results = list((fact(n) for n in range(10)))
+print(results)
+print()
+for x in results:
+    print(x)
+print('.....')
+for x in results:
+    print(x)
+print('.....')
+
+results = [fact(n) for n in range(10)]
+print(results)
+print()
+for x in results:
+    print(x)
+print('.....')
+for x in results:
+    print(x)
+print('.....')
 
 
