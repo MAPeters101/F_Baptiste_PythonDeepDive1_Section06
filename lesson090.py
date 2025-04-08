@@ -32,6 +32,18 @@ results = list(map(lambda x, y, z: x+y+z, l1, l2, l3))
 print(results)
 print('-'*80)
 
+l1 =[1,2,3,4,5]
+l2 = [10, 20, 30]
+l3 = 100,200,300,400
+results = map(lambda x, y: x+y, l1, l2, l3)
+print(results)
+# for x in results:
+#     print(x)
+
+
+
+print('-'*80)
+
 
 
 
