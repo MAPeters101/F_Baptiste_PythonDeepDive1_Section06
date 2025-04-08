@@ -56,7 +56,31 @@ print(filter(None, [1,0,4,'a','',None,True,False]))
 print(list(filter(None, [1,0,4,'a','',None,True,False])))
 print('-'*80)
 
+l1 = [1,2,3,4]
+l2 = [10,20,30,40]
+l3 = 'python'
+results = zip(l1,l2,l3)
+print(results)
+for x in results:
+    print(x)
+print('.....')
 
+print(results)
+for x in results:
+    print(x)
+print('.....')
+
+results = list(zip(l1,l2,l3))
+print(results)
+for x in results:
+    print(x)
+print('.....')
+
+print(results)
+for x in results:
+    print(x)
+print('.....')
+print('-'*80)
 
 
 
