@@ -39,10 +39,25 @@ results = map(lambda x, y: x+y, l1, l2, l3)
 print(results)
 # for x in results:
 #     print(x)
-
-
-
 print('-'*80)
+
+x = range(25)
+print(x)
+for i in x:
+    print(i)
+print()
+
+for i in x:
+    print(i)
+print('-'*20)
+
+print(list(filter(lambda x: x%3==0, range(25))))
+print(filter(None, [1,0,4,'a','',None,True,False]))
+print(list(filter(None, [1,0,4,'a','',None,True,False])))
+print('-'*80)
+
+
+
 
 
 
