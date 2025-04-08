@@ -82,7 +82,7 @@ for x in results:
 print('.....')
 print('-'*80)
 
-
+print(list(zip(range(10_000), 'python')))
 
 
 
