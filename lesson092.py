@@ -34,6 +34,18 @@ def add_sequence(sequence):
 print(add_sequence(l))
 print('-'*80)
 
+def _reduce(fn, sequence):
+    result = sequence[0]
+    for x in sequence[1:]:
+        result = fn(result, x)
+    return result
+
+
+print(_reduce(_max, l))
+print(_reduce(_min, l))
+print(_reduce(_add, l))
+#print(_reduce(_add, {1,3,4,5}))
+print('-' * 80)
 
 
 
