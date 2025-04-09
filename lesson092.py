@@ -24,6 +24,15 @@ def min_sequence(sequence):
 print(min_sequence(l))
 print('-'*80)
 
+_add = lambda a, b: a+b
+def add_sequence(sequence):
+    result = sequence[0]
+    for x in sequence[1:]:
+        result = _add(result, x)
+    return result
+
+print(add_sequence(l))
+print('-'*80)
 
 
 
