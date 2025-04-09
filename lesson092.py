@@ -12,4 +12,19 @@ def max_sequence(sequence):
     return result
 
 print(max_sequence(l))
+print('-'*80)
+
+_min = lambda a, b: a if a < b else b
+def min_sequence(sequence):
+    result = sequence[0]
+    for x in sequence[1:]:
+        result = _min(result, x)
+    return result
+
+print(min_sequence(l))
+print('-'*80)
+
+
+
+
 
