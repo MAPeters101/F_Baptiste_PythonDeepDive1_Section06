@@ -122,4 +122,18 @@ for x in results:
     print(x)
 print('.....')
 
+print('-'*80)
 
+l1 = [1,2,3,4,5,6]
+l2 = [10,20,30,40]
+print(list(map(lambda x,y: x+y, l1, l2)))
+print(x+y for x,y in zip(l1,l2))
+print([x+y for x,y in zip(l1,l2)])
+print()
+print(list(filter(lambda x: x%2==0, map(lambda x,y: x+y, l1, l2))))
+print([x+y for x,y in zip(l1,l2) if (x+y)%2 == 0])
+print()
+
+results = (x+y for x,y in zip(l1,l2) if (x+y)%2 == 0)
+print(results)
+print(list(results))
