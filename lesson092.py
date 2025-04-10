@@ -98,6 +98,22 @@ print(fact(2))
 print(fact(2))
 print('-'*80)
 
+def _reduce(fn, sequence, initial):
+    result = initial
+    for x in sequence:
+        result = fn(result, x)
+    return result
+l = [1,2,3,4] # = 4!
+print(_reduce(lambda a, b: a+b, l, 0))
+print(_reduce(lambda a, b: a+b, l, 100))
+print(_reduce(lambda a, b: a+b, {1,2,3,4}, 0))
+print(_reduce(lambda a, b: a+b, {1,2,3,4}, 100))
+print()
+
+print(reduce(lambda a, b: a+b, {1,2,3,4}, 0))
+print(reduce(lambda a, b: a+b, {1,2,3,4}, 100))
+print()
+
 
 
 
