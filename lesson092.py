@@ -58,3 +58,13 @@ print(sum(l))
 print(sum({1,2,3}))
 print('-' * 80)
 
+s = {True, 1, 0, None}
+print(all(s))
+s2 = {True, 1,"s"}
+print(all(s2))
+print(bool(True) and bool(l) and bool('s'))
+print(bool(True) and bool(l) and bool(0) and bool(None))
+print('-' * 80)
+
+
+
