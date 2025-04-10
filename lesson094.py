@@ -36,6 +36,20 @@ f = partial(my_func, 10, k1='a')
 f(20, 100, 200, k2='b', k3=1000, k4=2000)
 print('-'*80)
 
+def pow(base, exponent):
+    return base ** exponent
+sq = partial(pow, 2)
+print(sq(10))
+print()
 
+sq = partial(pow, exponent=2)
+print(sq(10))
+print()
+
+cu = partial(pow, exponent=3)
+print(cu(5))
+print(cu(base=5))
+print(cu(base=5, exponent=2))
+print('-'*80)
 
 
