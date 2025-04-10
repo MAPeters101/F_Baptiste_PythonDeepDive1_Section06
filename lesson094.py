@@ -67,10 +67,22 @@ f(100)
 a.append(3)
 print(a)
 f(100)
-print('-'*80)
+print('='*80)
 
+origin = (0,0)
+l = [(1,1), (0,2), (-3,2), (0,0), (10,10)]
+dist2 = lambda a,b: (a[0] - b[0])**2 + (a[1] - b[1])**2
+print(dist2((1,1), origin))
+print(sorted(l))
+f = partial(dist2, origin)
+print(f((1,1)))
+print(sorted(l, key=f))
+print()
 
-
+f = lambda x: dist2(origin, x)
+print(sorted(l,key=f))
+print(sorted(l,key=lambda x: dist2(origin, x)))
+print(sorted(l,key=partial(dist2, origin)))
 
 
 
