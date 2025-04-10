@@ -76,6 +76,28 @@ print(reduce(lambda a, b: bool(a) and bool(b), s))
 print(reduce(lambda a, b: bool(a) or bool(b), s3))
 print('-' * 80)
 
+l = [5,8,6,10,9]
+print(reduce(lambda a,b: a*b, l))
+
+l = [1,2,3,4] # = 4!
+print(reduce(lambda a,b: a*b, l))
+print(range(5))
+print(range(5)[0])
+print(list(range(5)))
+print(list(range(1,5+1)))
+print(reduce(lambda a, b: a*b, range(1,5+1)))
+def fact(n):
+    return 1 if n < 2 else n * fact(n-1)
+print(fact(5))
+print()
+
+def fact(n):
+    return reduce(lambda a, b: a*b, range(1,n+1))
+print(fact(5))
+print(fact(2))
+print(fact(2))
+print('-'*80)
+
 
 
 
