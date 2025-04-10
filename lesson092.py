@@ -66,5 +66,18 @@ print(bool(True) and bool(l) and bool('s'))
 print(bool(True) and bool(l) and bool(0) and bool(None))
 print('-' * 80)
 
+print(any(s))
+print(any(s2))
+s3 = {False, 0, '', None}
+print(any(s3))
+print('-' * 80)
+
+print(reduce(lambda a, b: bool(a) and bool(b), s))
+print(reduce(lambda a, b: bool(a) or bool(b), s3))
+print('-' * 80)
+
+
+
+
 
 
