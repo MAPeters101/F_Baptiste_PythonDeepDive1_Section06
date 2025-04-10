@@ -59,6 +59,16 @@ a = 3
 print(sq(5))
 print('-'*80)
 
+def my_func(a,b):
+    print(a, b)
+a = [1,2]
+f = partial(my_func, a)
+f(100)
+a.append(3)
+print(a)
+f(100)
+print('-'*80)
+
 
 
 
