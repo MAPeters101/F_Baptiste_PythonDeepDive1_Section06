@@ -44,8 +44,17 @@ def _reduce(fn, sequence):
 print(_reduce(_max, l))
 print(_reduce(_min, l))
 print(_reduce(_add, l))
-#print(_reduce(_add, {1,3,4,5}))
+#print(_reduce(_max, {1,3,4,5}))
 print('-' * 80)
 
-
+from functools import reduce
+print(reduce(_max, l))
+print(reduce(_add, l))
+print(reduce(_max, {1,3,4,5}))
+print()
+print(min(l))
+print(max(l))
+print(sum(l))
+print(sum({1,2,3}))
+print('-' * 80)
 
