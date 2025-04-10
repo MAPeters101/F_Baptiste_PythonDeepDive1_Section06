@@ -52,4 +52,15 @@ print(cu(base=5))
 print(cu(base=5, exponent=2))
 print('-'*80)
 
+a = 2
+sq = partial(pow, exponent=a)
+print(sq(5))
+a = 3
+print(sq(5))
+print('-'*80)
+
+
+
+
+
 
