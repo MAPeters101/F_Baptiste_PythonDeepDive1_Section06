@@ -32,4 +32,10 @@ def f(x, *vars, kw, **kwvars):
 f(20, 100, 200, kw='b',k3=1000, k4=2000)
 print('-'*80)
 
+f = partial(my_func, 10, k1='a')
+f(20, 100, 200, k2='b', k3=1000, k4=2000)
+print('-'*80)
+
+
+
 
