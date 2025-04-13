@@ -40,5 +40,15 @@ operator.delitem(my_list, 3)
 print(my_list)
 print('-'*80)
 
+f = operator.itemgetter(2)
+print(f)
+print(type(f))
+#f()
+my_list = [1,2,3,4]
+print(f(my_list))
+s = 'python'
+print(f(s))
+print('-'*80)
+
 
 
