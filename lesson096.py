@@ -164,5 +164,22 @@ f = operator.methodcaller('test')
 f(obj)
 print('-'*80)
 
+class MyClass:
+    def __init__(self):
+        self.a = 10
+        self.b = 20
 
+    def test(self, c):
+        print(self.a, self.b, c)
+
+obj = MyClass()
+print(obj.a)
+print(obj.b)
+#obj.test()
+obj.test(100)
+print()
+
+#operator.methodcaller('test')(obj)
+operator.methodcaller('test', 300)(obj)
+print('-'*80)
 
