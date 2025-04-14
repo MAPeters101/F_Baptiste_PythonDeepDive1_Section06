@@ -135,9 +135,16 @@ print(a.real)
 print()
 
 l = [5-10j, 3+3j, 2-100j]
-print(sorted(l))
+#print(sorted(l))
 print(sorted(l, key=lambda x: x.real))
 print(sorted(l, key=operator.attrgetter('real')))
 print('-'*80)
+
+l = [(2,3,4), (1,3,5),(6,), (4,100)]
+print(sorted(l, key=lambda x: x[0]))
+print(sorted(l, key=operator.itemgetter(0)))
+print('-'*80)
+
+
 
 
