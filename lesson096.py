@@ -50,5 +50,26 @@ s = 'python'
 print(f(s))
 print('-'*80)
 
+f = operator.itemgetter(2,3)
+print(type(f))
+my_list = [1,2,3,4]
+print(f(my_list))
+print()
+
+f = operator.itemgetter(1,2,3)
+my_list = [1,2,3,4]
+print(f(my_list))
+print()
+
+f = operator.itemgetter(2,3,4)
+my_list = [1,2,3,4]
+#print(f(my_list))
+print()
+
+f = operator.itemgetter(2,3)
+print(f('python'))
+print()
+print('-'*80)
+
 
 
