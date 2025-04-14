@@ -129,6 +129,15 @@ print(f(x))
 print()
 print('-'*80)
 
+a = 5 + 10j
+print(a)
+print(a.real)
+print()
 
+l = [5-10j, 3+3j, 2-100j]
+print(sorted(l))
+print(sorted(l, key=lambda x: x.real))
+print(sorted(l, key=operator.attrgetter('real')))
+print('-'*80)
 
 
