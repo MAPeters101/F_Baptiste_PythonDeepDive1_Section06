@@ -71,5 +71,39 @@ print(f('python'))
 print()
 print('-'*80)
 
+class MyClass:
+    def __init__(self):
+        self.a = 10
+        self.b = 20
+        self.c = 30
+
+    def test(self):
+        print('test method running...')
+
+obj = MyClass()
+print(obj)
+print(obj.a)
+print(obj.b)
+print(obj.test)
+obj.test()
+
+print(operator.attrgetter('a'))
+prop_a = operator.attrgetter('a')
+print(prop_a(obj))
+#print(prop_a())
+print()
+
+my_var = 'b'
+#print(obj.my_var)
+print(operator.attrgetter(my_var))
+print(operator.attrgetter(my_var)(obj))
+prop_b = operator.attrgetter(my_var)
+print(prop_b(obj))
+print()
+
+print(prop_b(obj))
+my_var = 'c'
+print(prop_b(obj))
+print('-'*80)
 
 
