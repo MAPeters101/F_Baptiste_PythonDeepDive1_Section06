@@ -202,3 +202,29 @@ print()
 operator.methodcaller('test', 300, 400)(obj)
 print('-'*80)
 
+class MyClass:
+    def __init__(self):
+        self.a = 10
+        self.b = 20
+
+    def test(self, c, d, *, e):
+        print(self.a, self.b, c, d, e)
+
+obj = MyClass()
+print(obj.a)
+print(obj.b)
+#obj.test()
+obj.test(100, 200, e=300)
+print()
+
+#operator.methodcaller('test')(obj)
+operator.methodcaller('test', 300, 400, e=500)(obj)
+print()
+
+f = operator.attrgetter('test', )
+print(f(obj))
+#f(obj)()
+#f(obj)(10, 20)
+f(obj)(10, 20, e=100)
+print('-'*80)
+print('https://docs.python.org/3/library/operator.html')
