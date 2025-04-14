@@ -145,6 +145,24 @@ print(sorted(l, key=lambda x: x[0]))
 print(sorted(l, key=operator.itemgetter(0)))
 print('-'*80)
 
+class MyClass:
+    def __init__(self):
+        self.a = 10
+        self.b = 20
+        self.c = 30
+
+    def test(self):
+        print('test method running...')
+
+obj = MyClass()
+f = operator.attrgetter('test')
+print(f(obj))
+f(obj)()
+print()
+
+f = operator.methodcaller('test')
+f(obj)
+print('-'*80)
 
 
 
