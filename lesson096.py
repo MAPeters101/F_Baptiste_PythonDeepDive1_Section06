@@ -106,4 +106,9 @@ my_var = 'c'
 print(prop_b(obj))
 print('-'*80)
 
-
+print(operator.attrgetter('a', 'b')(obj))
+a, b, test = operator.attrgetter('a', 'b', 'test')(obj)
+print(a)
+print(b)
+print(test)
+test()
