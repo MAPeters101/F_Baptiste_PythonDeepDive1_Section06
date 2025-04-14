@@ -112,3 +112,23 @@ print(a)
 print(b)
 print(test)
 test()
+print('-'*80)
+
+f = lambda x: x.a
+print(f(obj))
+print()
+
+f = lambda x: x[2]
+x = [1,2,3,4]
+print(f(x))
+print()
+
+f = lambda x: (x[2], x[3])
+x = [1,2,3,4]
+print(f(x))
+print()
+print('-'*80)
+
+
+
+
